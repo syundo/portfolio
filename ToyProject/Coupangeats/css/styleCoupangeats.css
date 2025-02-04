@@ -1,0 +1,247 @@
+/* Navigation ***********************************************/
+nav {
+  width:100%;
+  height: 70px;
+  /* opacity: 0.9; */
+  position: fixed;
+  top: 0;
+}
+.navbar-brand {
+  width: 150px;
+  height: 50px;
+  background-image: url("../images/coupangeats_PC_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navbar-brand img{
+  width:150px;
+}
+nav.bg-dark {
+  background: rgba(2, 146, 216, 0.7) !important;
+}
+nav a {
+  color: white;
+  font-size: 15px !important;
+  padding: 5px 10px !important;
+}
+nav a.btn {
+  color: white;
+}
+.navbar-toggler {
+  border: none;
+}
+.container{
+  padding-top: 70px !important;
+  padding-bottom: 70px !important;
+  display: block !important;
+  width: 100% !important;
+
+}
+
+/* Main Title **********************************************/
+#main {
+  width:100%;
+  height: 768px;
+  background-image: url("../images/coupangeats_PC_title.jpg");
+  background-size: cover;
+  position: relative;
+}
+#main h1 {
+  position: absolute;
+  top:250px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+#main h1 div:nth-child(1) {
+  font-size: 60px;
+  font-weight:900 !important;
+}
+#main h1 div:nth-child(2) {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: lighter;
+}
+#main h1 .btn {
+  background: black;
+  color:white;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+/* Partner *************************************************/
+#partner {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+#partner img {
+  width: 100%;
+}
+#partner h6 {
+  font-weight: bold;
+  margin-top: 10px;
+}
+#partner .col-md-4 {
+  line-height: 30px;
+}
+#partner .col-md-4 div {
+  font-size: 16px;
+  color: gray;
+}
+
+/* Delivery, New *******************************************/
+#delivery .row,
+#new .row {
+  display:inline-block !important;
+}
+#delivery .col-md-6,
+#new .col-md-6
+{
+  padding: 20px;
+}
+#delivery .row .col-md-6:nth-child(odd),
+#new .row .col-md-6:nth-child(odd){
+  top: 50px;
+}
+#delivery .row:not(:nth-of-type(2)) .col-md-6,
+#new .row:not(:nth-of-type(2)) .col-md-6 {
+  float: right !important;  
+}
+#delivery .row:nth-of-type(2) .col-md-6,
+#new .row:nth-of-type(2) .col-md-6 {
+  float: left !important;  
+}
+#delivery .col-md-6 img,
+#new .col-md-6 video {
+  width: 100%;
+}
+
+/* Better **************************************************/
+#better {
+  width:100%;
+  height: 768px;
+  background-image: url("../images/coupangeats_PC_subtitle.jpg");
+  background-size: cover;
+  clear: both;
+}
+#better a{
+  color:black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Slider **************************************************/
+#slider {
+  margin: 7rem 0;
+}
+
+/* Footer **************************************************/
+footer {
+  background: #f2f2f2;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 17px;
+}
+footer .container{
+  position: relative;
+}
+#splash{
+  position: absolute;
+  top: 70px;
+  right:20px;
+}
+
+/* Color ***************************************************/
+#delivery h1,
+#new h1,
+#slider h1
+{
+  font-size: 45px;
+  font-weight: bold;
+}
+#delivery h1 span,
+#new h1 span,
+#slider h1 span
+{
+  color:#00B0FB;
+}
+#delivery .col-md-6 h2,
+#new .col-md-6 h2
+{
+  font-size: 35px;
+  font-weight: bold;
+}
+#delivery .col-md-6 h3,
+#new .col-md-6 h3
+{
+  font-size: 25px;
+  font-weight: bold;
+  color:#00B0FB;
+}
+
+@media screen and (max-width:768px) { 
+  /* Navigation ***************************/
+  .navbar-brand {
+    background-image: url("../images/coupangeats_M_logo.png");
+  }
+  #collapsibleNavbar {
+    padding : 50px !important;
+    background: white;    
+  }
+  #collapsibleNavbar a {
+    color:black;
+  }
+  #collapsibleNavbar li:nth-child(2) {
+    border-top:1px solid gray;
+    border-bottom: 1px solid gray;
+  }
+  /* Main Title ***************************/
+  #main {
+    background-image: url("../images/coupangeats_M_title.jpg");
+  }
+  #main h1 {
+    top:130px;
+  }
+  #main h1 div:nth-child(1) {
+    font-size: 50px;
+  }
+  /* Partner ******************************/
+  #partner {    
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  #partner .col-md-4 {
+    box-sizing: border-box;
+    padding-top: 50px;
+  }
+  /* Delivery,New**************************/
+  #delivery .row .col-sm-6:nth-child(odd),
+  #new .row .col-sm-6:nth-child(odd){
+    top: 0px;
+    left:20px;
+  }
+  /* Better *******************************/
+  #better {
+    background-image: url("../images/coupangeats_M_subtitle.jpg");
+  }
+  /* Slider********************************/
+  #slider h1{
+    font-size: 25px;
+  }
+  /* Footer********************************/
+  footer div{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;    
+  }
+  #splash{
+    position: relative;
+    left:0px;
+  }
+}
