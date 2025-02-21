@@ -38,15 +38,15 @@
   
   <div class="container-fluid text-center bg-1">
     <!-- <h2>윤서연의 포트폴리오</h2> -->
-    <img src="img/profile.png" alt="profile" id="profile" class="img-rounded" style="height: 15rem;">
+    <img src="img/profile.png" alt="profile" id="profile" class="img-rounded">
     <h2>발전하는 개발자 윤서연입니다.</h2>
   </div>
 
   <!-- Contents -->
   <div class="container-fluid text-center bg-2">
-    <div id="about" class="container contents">
-      <h2 class="margin">저를 소개합니다.</h2>
-      <div class="jumbotron">
+    <!-- <div id="about" class="container contents"> -->
+      <!-- <h2 class="margin">저를 소개합니다.</h2> -->
+      <div id="about" class="container contents jumbotron">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
           <span>Notion에는 그동한 공부한 내용들이 정리되어 있습니다.</span>
@@ -56,7 +56,7 @@
           학습 노트
         </a>
       </div>
-    </div>
+    <!-- </div> -->
     
     <!-- Portfolio -->
     <div id="portfolio" class="container contents">
@@ -107,7 +107,7 @@
             <h4>카카오뱅크 클론</h4>
           </a>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            총 5명이 함께 진행한 팀 프로젝트 입니다. 저는 멤버로 고객센터 페이지를 담당했습니다. 기획단계를 포함한 제작 기간은 대략 2주 정도 였습니다.
             <br>
             <button type="button" class="btn" data-toggle="modal" data-target="#MiniProjectModal">자세히</button>
           </p>
@@ -121,7 +121,10 @@
                   <h4 class="modal-title">개발 내용</h4>
                 </div>
                 <div class="modal-body">
-                  <p>미니 프로젝트 1 개발 내용</p>
+                  <p>프로젝트 기간: '25.02.11. - '25.02.21.</p>
+                  <p>담당 파트: 고객센터 - 자주묻는질문(FAQ) 페이지</p>
+                  <p>담당 파트에 관한 설명: </p>
+                  <p>상단에는 검색창이 있으며, 하단에는 부트스트랩 탭 네비게이션과 아코디언으로 구성된 자주묻는 질문 목록이 있습니다. 상단 검색창은 간단한 애니메이션을 추가하여 기존 카카오뱅크 페이지와 유사하게 동작하도록 해봤습니다. 아코디언 내용은 json 파일로 만든 후 ajax를 통해 구현하였습니다. 더보기 버튼과 검색창의 경우 js와 jquery를 활용하여 기능을 구현하였습니다.</p>
                 </div>
                 <div class="modal-footer">
                   <a class="btn btn-default" href="#" target="_blank">View</a>
