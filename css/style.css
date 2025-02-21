@@ -24,6 +24,7 @@ span {font-size: 1.3rem; font-weight: bold;}
   color: olive !important;
   font-weight: bold;
 }
+#profile {border: 1px solid olive;}
 .container-fluid {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -62,6 +63,9 @@ span {font-size: 1.3rem; font-weight: bold;}
   margin-bottom: 3rem;
   padding: 0.5rem 2rem;
   font-size: 1.2rem;
+}
+#portfolio img {
+  border: 3px double olive;
 }
 .col-sm-12>.btn, .col-sm-6>.btn{
   margin-left: 5rem;
