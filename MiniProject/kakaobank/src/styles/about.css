@@ -1,0 +1,223 @@
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('../assets/font/KoPubWorld_Dotum_Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'MyFont';
+}
+
+.kakao{
+  margin-top: 150px;
+  margin-bottom: 80px;
+}
+.kakao h1{
+  font-size: 42px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+.kakao p{
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 200;
+  
+}
+
+.about_container {
+  min-width: 1080px;
+}
+
+/* 홈 이미지 -----------------------------------------------------------*/
+.phoneImg{
+background-image: url(../assets/media/images/02about/home_image.png);
+background-size: cover;
+background-position: right 48% top 45%;
+height: 500px;
+margin-bottom: 80px;
+}
+
+/* 은행 history--------------------------------------------------------- */
+.timelineContainer{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+
+}
+#timeline {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: 'MyFont';
+  line-height: 40px;
+}
+
+.year-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.year {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+  white-space: nowrap;
+  width: 80px; 
+  line-height: 1;
+}
+
+.events {
+  flex-grow: 1;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.month {
+  width: 50px;
+  color: #888888;
+  text-align: right;
+  margin-right: 30px;
+  font-size: 18px;
+}
+
+.description {
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+/* 브랜드 동영상---------------------------------------------------------- */
+.video{
+  height: 760px;
+  background: #FAFAFA;
+  padding-top: 100px;
+  padding-bottom: 300px !important;
+  margin-top: 80px;
+  margin-bottom: 130px;
+  font-family: 'MyFont';
+  box-sizing: border-box;
+}
+.video .container{
+  margin-top: 30px;
+}
+.video h2, .bi_intro h2{
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-size: 31px;
+}
+.line{
+  width: 50px; 
+  height: 1px;
+   background: black; 
+   margin: 10px auto; 
+   margin-bottom: 60px; 
+   margin-top: 25px;
+  }
+  #video {min-width: 1050px; width: 100%;}
+  #video .col-sm-4{ line-height: 20px;}
+  #video .col-sm-4 div:nth-of-type(1){ 
+    margin-bottom: 30px;
+  }
+  #video .col-sm-4 p:nth-of-type(1){
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  #video .col-sm-4 p:not(:nth-of-type(1)){
+    font-size: 11px;
+    color: #888888;
+  }
+  
+/* 동영상을 담는 컨테이너의 위치와 크기 */
+.embed-responsive {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 비율 */
+  overflow: hidden;
+}
+
+/* 이미지가 동영상 위에  설정한 것 */
+.embed-responsive img,
+.embed-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.embed-responsive img{z-index: 99;}
+
+/* 클릭 안 하면 동영상 안 보이게*/
+.embed-responsive iframe {
+  display: none;
+}
+
+/* 동영상의 border */
+.border {
+  border: 3px dashed black !important;
+}
+  
+
+  
+/* BI 소개 --------------------------------------------------------------------- */
+.bi_intro{
+  font-family: 'MyFont';
+  box-sizing: border-box;
+  padding: 0;
+}
+.biImg{
+  background-image: url(../assets/media/images/02about/img_brand_bi.png);
+  background-size: cover;
+  height: 410px;
+  width: 950px;
+  margin: 0 auto 60px auto;
+  margin-bottom: 60px;
+  background-position: center; 
+}
+.text_sym{
+   padding-bottom: 90px;
+   line-height: 50px;
+  }
+  .text_sym h3{
+    font-size: 22px;
+  }
+  .text_sym p{
+    font-size: 12px;
+  }
+  .about_hr {
+    width: 1080px;
+    margin: 0 auto;
+  }
+
+#dl_btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+
+.btn_down {
+  display: inline-block;
+  width: 298px;
+  height: 48px;
+  margin: 0 10px;
+  border: 1px solid #dcdcdc;
+  font-size: 13px;
+  line-height: 48px;
+  color: #666;
+  background-color: #fafafa;
+  text-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1201px) {
+  #video {flex-wrap: nowrap; margin: 0 auto;}
+}

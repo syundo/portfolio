@@ -1,0 +1,361 @@
+/* 기본적인 배치를 위한 css */
+#product_container {
+  width: 100%;
+  min-width: 1080px;
+  margin: 0 auto;
+}
+.product_container{
+  text-align: center;
+  /* margin: 0px 20%; */
+  overflow: hidden;
+  width: 1080px;
+  margin: auto;
+}
+.container_top_margin{
+  margin-top: 200px;
+}
+.bg_color_set{
+  background-color: #F7F7F7;
+}
+.slider_bg_set{
+  margin-top: 145px;
+  padding: 50px 0px;
+
+  background-color: #23A662;
+}
+
+/* 캐러셀 스타일 */
+.main_slider {background-color: #23A662;overflow:hidden;width: 100%;min-width: 1080px;}
+/* animation */
+.slider_body {overflow: hidden;height: 265px; background-color: #23A662;}
+.slider_section {display: flex; width: 3828px;} /* 자식의 2배 == 200% (slider*2) */
+/* .animation_panel */
+.slider {display: flex; white-space: nowrap; width: 1914px;align-items: center;} /* 너비 고정값을 주어야 반응형에 깨지지 않음 */
+.animation_box1 {animation: moveToRight 35s linear infinite;}
+.animation_box2 {animation: moveToRight 20s linear infinite;}
+.moving_margin{padding: 5px;}
+@keyframes moveToRight {from {transform: translateX(0);}to {transform: translateX(-100%);}}
+
+#moving_panel div:nth-child(odd){
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+#moving_panel div:nth-child(even) .color_set{
+  font-size: 36px;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 30px;
+  padding:5px 15px;
+  margin: 0px 5px;
+  margin-top: 5px;
+  text-align: center;
+  color: #23A662;
+}
+
+#moving_panel2 div:nth-child(odd) img{
+  width: 62px;
+  padding-top: 5px;
+}
+#moving_panel2 div:nth-child(even) p{
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0px 10px;
+  color: #fff;
+}
+
+
+/* 컨텐츠 플로팅 설정 */
+.floating{
+  float: left;
+  width: 50%;
+}
+.floating_clear{
+  float: none;
+}
+.float_fin{
+  clear: both;
+}
+.img_set{
+  width: 50%;
+  min-width: 300px;
+  max-width: 500px;
+}
+.floating_icon{
+  float: left;
+  width: 45px;
+  margin-right: 10px;
+}
+.floating2{
+  float: left;
+  width: 280px;
+}
+.img_icon_set{
+  width: 100%;
+}
+
+/* 요소 간격 설정 */
+#sub_content{
+  padding: 0 20%;
+}
+#ad_contents{
+  font-size: 16px;
+}
+#question_panel{
+  margin-top: 40px;
+  margin-bottom: 80px;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+.slider_margin{
+  margin-top: 120px;
+}
+.footer_set_margin{
+  padding-bottom: 196px;
+}
+.info_setting{
+  margin: 70px 0px;
+}
+.info_setting > div{
+  width: 49%;
+  display: inline-block;
+  position: relative;
+}
+.insert_line{
+  background-color: #F7F7F7;
+  width: 100%;
+  height: 7px;
+}
+
+/* font style / 글자가 들어간 패널들 */
+#subhead {
+  font-size: 26px;
+  font-weight: bold;
+  color: #888888;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#mainhead{
+  font-size: 62px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+#mainhead span{
+  color: #23A662;
+}
+
+#sub_content_left :nth-child(1){
+  font-size: 18px;
+  color: #888888;
+}
+#sub_content_left :nth-child(2){
+  font-size: 30px;
+  font-weight: bold;
+}
+#sub_content_left{
+  transform: translateX(12%);
+}
+#sub_content_right{
+  transform: translateX(-5%);
+}
+#sub_content_right :nth-child(1){
+  font-size: 18px;
+  color: #888888;
+}
+#sub_content_right :nth-child(2){
+  font-size: 30px;
+  font-weight: bold;
+}
+/* 5개 컨텐츠 나열된것 */
+#content1,#content2,#content3,#content4,#content5{
+  text-align: left;
+  min-height: 400px;
+  padding: 30px 0px;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#panel1,#panel2,#panel3,#panel4,#panel5{
+  transform: translateY(80px);
+}
+#subtext1, #subtext2, #subtext3, #subtext4, #subtext5{
+  font-size: 60px;
+  font-weight: bold;
+  color: #888888;
+}
+#maintext1,#maintext2,#maintext3,#maintext4,#maintext5{
+  font-size: 60px;
+  font-weight: bold;
+}
+#text1,#text2,#text3,#text4,#text5{
+  font-size: 20px;
+}
+#img_content2, #img_content4{
+  transform: translateY(30px);
+}
+/* 자주하는 질문 */
+#question_panel :nth-child(1){
+  font-weight: bold;
+  text-align: left;
+}
+.p_title{
+  font-size: 28px;
+  padding: 30px 0px;
+}
+#q_panel1,#q_panel2{
+  font-size: 20px;
+  background-color: #F7F7F7;
+  border-radius: 10px;
+  padding: 35px 30px;
+  margin: 5px 0px;
+  text-align: left;
+  color: #222222;
+  word-spacing: 1px;
+}
+#q_panel1 :nth-child(n+2),#q_panel2 :nth-child(n+2){
+  color: #888888;
+}
+#q_panel1 :nth-child(2){
+  margin: 15px 0px;
+  margin-bottom: 25px;
+}
+#q_panel2 :nth-child(2){
+  margin-top: 15px;
+}
+#more_btn{
+  background-color: #E9E9E9;
+  border-radius: 10px;
+  padding: 15px 0px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  cursor: pointer;
+}
+/* 상품안내 등 5개 모달을 띄우는 칸 */
+#more_info :nth-child(n+1):nth-child(-n+5){
+  background-color: #F7F7F7;
+  border-radius: 7px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 20px;
+  color: #3C3C3C;
+  text-align: left;
+  padding-left: 30px;
+}
+#more_info :nth-child(even){
+  margin-left: 1.5%;
+  margin-bottom: 5px;
+}
+#more_info>div>i{
+  position: absolute;
+  right: 15px;
+}
+#more_info>div:hover{
+  cursor: pointer;
+}
+/* 모달 설정 */
+.modal.show{
+  background-color: rgba(0,0,0,0.2);
+}
+.modal_posistion{
+  max-width: 820px;
+  width: 50%;
+}
+.modal_bg_set{
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px 20px;
+  border: none;
+}
+.modal_inner{
+  margin: 50px 40px;
+  padding-right: 20px;
+}
+.modal_inner p{
+  color: #222222;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.modal_inner div{
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.modal_inner div>div{
+  color: #888;
+  font-size: 12px;
+  margin-top: 8px;
+}
+.modal_inner span{
+  color: #17699C;
+  font-weight: bold;
+}
+.scale_up{
+  transform: scale(1.2);
+}
+/* 모달 앵커태그 설정 */
+#product_terms a{
+  text-decoration: underline;
+}
+.modal_inner{position: relative;}
+#product_terms p{
+  display: inline-block;
+}
+.download_a{
+  color: #666666;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+.download_a:hover{
+  color: #666666;
+}
+#terms_list li{
+  list-style-type: disc;
+  color: #222222;
+}
+#terms_list li::marker{
+  font-size: 10px;
+}
+
+
+/* 상품 광고 칸 */
+#safebox, #pigbank{
+  font-size: 15px;
+  margin-top: 50px;
+  margin-right: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 7px;
+  text-align: left;
+}
+#safebox, #pigbank:hover{
+  cursor: pointer;
+}
+#ad_contents .floating_clear div:nth-child(2){
+  font-weight: bold;
+}
+#signal_code{
+  font-size: 12px;
+  color: #666666;
+  text-align: right;
+  margin-right: 15%;
+  padding: 10px 0px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width:1345px){
+  .product_container{
+    text-align: center;
+    /* margin-left:100px;
+    margin-right:100px; */
+  }
+  .info_setting > div{
+    width: 45%;
+  }
+  #sub_content{
+    padding: 0 5%;
+  }
+}
