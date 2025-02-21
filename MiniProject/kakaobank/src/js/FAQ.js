@@ -28,7 +28,6 @@ $(document).ready(function () {
     let faqHtml = "";
     for (let i = 0; i < Math.min(visibleItems[tabNumber], totalItems[tabNumber]); i++) {
       let item = dataCache[tabNumber][i];
-      let subcategoryText = item.subcategory ? `[${item.subcategory}] ` : '';
 
       if (!item.subcategory) {
         faqHtml += `
@@ -126,8 +125,8 @@ $(document).ready(function () {
 
     for (let i = 0; i < visibleResults; i++) {
       let item = searchResults[i];
-      let subcategoryText = item.subcategory ? `[${item.subcategory}] ` : '';
 
+      let subcategoryText = item.subcategory ? `[${item.subcategory}] ` : '';
       resultHtml += `
         <div class="faq_content">
           <div id="search_content${i}" onclick="showCategory(event)">
