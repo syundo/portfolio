@@ -77,3 +77,6 @@ footer a {
   font-size: 1.5rem;
   color: honeydew;
 }
+#NotionModal .modal-dialog {
+  width: 90%;
+}
