@@ -28,5 +28,5 @@ function loadHTML(selector, filePath) {
 // 문서 로드 완료 후 실행
 document.addEventListener("DOMContentLoaded", () => {
   // 모달 로드
-  loadHTML("#modal_container", "../src/components/modal/modal.html");
+  loadHTML("#modal_container", "src/components/modal/modal.html");
 });
