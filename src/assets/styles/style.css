@@ -169,7 +169,7 @@ nav .menu a {
   margin-top: 1rem;
 }
 nav .menu a:hover {
-  font-size: 1.5em;
+  opacity: 0.5;
 }
 nav li {
   margin: 0.5em 0 0.5em 0.8em;

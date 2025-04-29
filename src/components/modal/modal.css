@@ -63,7 +63,7 @@ input[type="checkbox"] {
   opacity: 1;
 }
 
-/* 컨텐츠 로딩 애니메이션 */
+/* Loading animation */
 .modal_body.loading {
   display: flex;
   justify-content: center;
