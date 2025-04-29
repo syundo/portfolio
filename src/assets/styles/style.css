@@ -65,6 +65,7 @@
 body {
   font-family: 'gg1000y_batang_r', 'groom_sans_c',Verdana, monospace;
   font-size: 1rem;
+  overflow-x: hidden;
 }
 a {
   color: inherit;
