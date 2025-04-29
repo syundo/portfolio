@@ -1,0 +1,10 @@
+#typed_text {
+  font-size: inherit;
+}
+.cursor {
+  font-size: inherit;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
