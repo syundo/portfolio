@@ -118,7 +118,7 @@ h1 a {
 
 /* Header***************************************************************** */
 header {
-  padding: 5rem;
+  padding: 0 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,7 +126,8 @@ header {
   text-align: center;
 }
 header #profile {
-  height: 30vh;
+  width: 100%;
+  margin: 2.5em 0 1em;
 }
 header #beam {
   fill: #f8c847;
@@ -134,7 +135,7 @@ header #beam {
   mix-blend-mode: luminosity;
 }
 header h2 {
-  margin-top: 1rem;
+  margin-top: 1em;
   font-weight: normal;
   font-family: 'neodgm_p';
 }
@@ -310,6 +311,10 @@ footer .logo {
 
 /* Media query*********************************************************** */
 @media screen and (min-width: 768px) {
+  header #profile {
+    width: 85%;
+  }
+
   nav .menu {
     background: none !important;
     box-shadow: none;
@@ -327,6 +332,10 @@ footer .logo {
   .toy {width: calc(33% - 1rem);}
 }
 @media screen and (min-width: 1024px) {
+  header #profile {
+    width: 70%;
+  }
+
   .container {width: 70%;}
   .team {width: calc(33% - 1rem);}
   .toy {width: calc(20% - 1rem);}
