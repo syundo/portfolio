@@ -77,13 +77,12 @@ button {
   color: inherit;
 }
 li {list-style: none;}
-h1 {font-size: 2.5rem;}
-h1 img {height: 2.5rem;}
-h2 {font-size: 2rem;}
-h3 {font-size: 1.7rem;}
-h4 {font-size: 1.5rem;}
-h5 {font-size: 1.2rem;}
-h6 {font-size: 1rem;}
+h1 {font-size: 2.5em;}
+h2 {font-size: 2em;}
+h3 {font-size: 1.7em;}
+h4 {font-size: 1.5em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1em;}
 h1 a {
   display: flex;
   align-items: center;
@@ -280,7 +279,10 @@ main h2 {
 }
 .team {width: calc(100% - 1rem);}
 .toy {width: calc(50% - 1rem);}
-.project.toy:hover {
+.toy.project {
+  font-size: smaller;
+}
+.toy.project:hover {
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
