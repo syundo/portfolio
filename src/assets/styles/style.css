@@ -5,10 +5,21 @@
        url("../fonts/gg1000y/otf/batang_regular.otf") format("opentype");
 }
 @font-face {
-  font-family: 'gg1000y_title_m';
-  src: url("../fonts/gg1000y/woff/title_medium.woff") format("woff"), 
-       url("../fonts/gg1000y/ttf/title_medium.ttf") format("truetype"), 
-       url("../fonts/gg1000y/otf/title_medium.otf") format("opentype");
+  font-family: 'gg1000y_title_v';
+  src: url("../fonts/gg1000y/woff/title_v.woff") format("woff"), 
+       url("../fonts/gg1000y/ttf/title_v.ttf") format("truetype"), 
+       url("../fonts/gg1000y/otf/title_v.otf") format("opentype");
+}
+@font-face {
+  font-family: 'neodgm_p';
+  src: url("../fonts/neodgm/woff2/neodgm_pro.woff2") format("woff2"), 
+       url("../fonts/neodgm/woff/neodgm_pro.woff") format("woff"), 
+       url("../fonts/neodgm/ttf/neodgm_pro.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'rokaf_sans_m';
+  src: url("../fonts/rokaf/ttf/sans_medium.ttf") format("truetype"), 
+       url("../fonts/rokaf/otf/sans_medium.otf") format("opentype");
 }
 @font-face {
   font-family: 'groom_sans_c';
@@ -17,11 +28,6 @@
        url("../fonts/groom_sans/ttf/code.ttf") format("truetype"), 
        url("../fonts/groom_sans/eot/code.eot") format("embedded-opentype"), 
        url("../fonts/groom_sans/svg/code.svg") format("svg");
-}
-@font-face {
-  font-family: 'rokaf_sans_m';
-  src: url("../fonts/rokaf/ttf/sans_medium.ttf") format("truetype"), 
-       url("../fonts/rokaf/otf/sans_medium.otf") format("opentype");
 }
 /* 색상 변수 선언 */
 :root {
@@ -109,7 +115,7 @@ h1 a {
 .night .project {border: 0.2rem dashed var(--project-border);}
 .night .project section span {color: var(--night-btn);}
 .night .btn {color: var(--night-btn);}
-.night footer {background: var(--day-footer);}
+.night footer {background: var(--night-footer);}
 
 /* Header***************************************************************** */
 header {
@@ -130,6 +136,8 @@ header #beam {
 }
 header h2 {
   margin-top: 1rem;
+  font-weight: normal;
+  font-family: 'neodgm_p';
 }
 
 /* Navigation************************************************************* */
@@ -161,7 +169,7 @@ nav .menu a {
   margin-top: 1rem;
 }
 nav .menu a:hover {
-  opacity: 0.5;
+  font-size: 1.5em;
 }
 nav li {
   margin: 0.5em 0 0.5em 0.8em;
@@ -268,14 +276,14 @@ main h2 {
   display: inline-block;
 }
 .project section span:hover {
-  opacity: 0.9;
-}
-.project.toy:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+  opacity: 0.7;
 }
 .team {width: calc(100% - 1rem);}
 .toy {width: calc(50% - 1rem);}
+.project.toy:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
 /* Skill */
 #skill img {
   width: 40%;
