@@ -109,6 +109,7 @@ h1 a {
 .night .project {border: 0.2rem dashed var(--project-border);}
 .night .project section span {color: var(--night-btn);}
 .night .btn {color: var(--night-btn);}
+.night footer {background: var(--day-footer);}
 
 /* Header***************************************************************** */
 header {
@@ -268,6 +269,10 @@ main h2 {
 }
 .project section span:hover {
   opacity: 0.9;
+}
+.project.toy:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 .team {width: calc(100% - 1rem);}
 .toy {width: calc(50% - 1rem);}
