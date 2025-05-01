@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자주묻는질문 | 카카오뱅크</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="../assets/icon/favicon.png" type="image/x-icon">
+  <!-- Bootstrap v4.6 -->
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+   <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+   <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+   <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery/ajax -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- stylesheet -->
+   <link rel="stylesheet" href="../css/FAQ.css">
+  <!-- javascript -->
+   <script src="../js/FAQ.js"></script>
+</head>
+<body>
+  <header></header>
+  <div id="container">
+    <!-- 검색창(영역)---------------------------------------------------------------------------->
+    <section id="search">
+      <div id="search_contents">
+        <h2>무엇을 도와드릴까요?</h2>
+        <div id="question_box">
+          <i id="search_btn" class="fa-solid fa-magnifying-glass"></i>
+          <input id="question" type="text" placeholder="궁금하신 점이 있다면 검색 혹은 도움말 카테고리를 선택하세요.">
+        </div>
+        <ul id="serch_tags">
+          <li># 주택담보대출</li>
+          <li># 증명서발급</li>
+          <li># 한도계좌해제</li>
+          <li># 모임통장</li>
+          <li># mini만들기</li>
+        </ul>
+      </div>
+    </section>
+    <!-- 자주묻는질문--------------------------------------------------------------------------->
+    <section id="faq">
+      <!-- 검색 결과------------------------------>
+      <div id="search_results_container" style="display: none;">
+        <div id="search_results"></div>
+        <a id="more_search" style="display: none;">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+      </div>
+
+      <!-- Categoty tab--------------------------->
+      <ul id="tab_list" class="nav" role="tablist">
+        <li>
+          <a id="custom_width" class="nav-link active" data-toggle="tab" href="#category01">입출금/예적금</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category02">대출</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category03">외환</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category04">카드</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category05">투자</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category06">mini</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category07">사업자</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category08">ATM</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category09">제휴서비스</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category10">인증/보안</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category11">알림</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category12">앱 이용</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category13">개인금고</a>
+        </li>
+        <li>
+          <a class="nav-link" data-toggle="tab" href="#category14">기타</a>
+        </li>
+      </ul>
+      
+      <!-- Tab 내용------------------------------->
+      <article class="tab-content">
+        <div id="category01" class="tab-pane fade show active">
+          <p>입출금/예적금(349)</p>
+          <div id="faq_container01"></div>
+          <a id="load_more1">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category02" class="tab-pane fade">
+          <p>대출(546)</p>
+          <div id="faq_container02"></div>
+          <a id="load_more2">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category03" class="tab-pane fade">
+          <p>외환(100)</p>
+          <div id="faq_container03"></div>
+          <a id="load_more3">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category04" class="tab-pane fade">
+          <p>카드(201)</p>
+          <div id="faq_container04"></div>
+          <a id="load_more4">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category05" class="tab-pane fade">
+          <p>투자(128)</p>
+          <div id="faq_container05"></div>
+          <a id="load_more5">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category06" class="tab-pane fade">
+          <p>mini(112)</p>
+          <div id="faq_container06"></div>
+          <a id="load_more6">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category07" class="tab-pane fade">
+          <p>사업자(81)</p>
+          <div id="faq_container07"></div>
+          <a id="load_more7">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category08" class="tab-pane fade">
+          <p>ATM(30)</p>
+            <div id="faq_container08"></div>
+          <a id="load_more8">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category09" class="tab-pane fade">
+          <p>제휴서비스(86)</p>
+          <div id="faq_container09"></div>
+          <a id="load_more9">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category10" class="tab-pane fade">
+          <p>인증/보안(85)</p>
+          <div id="faq_container10"></div>
+          <a id="load_more10">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category11" class="tab-pane fade">
+          <p>알림(18)</p>
+          <div id="faq_container11"></div>
+          <a id="load_more11">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category12" class="tab-pane fade">
+          <p>앱 이용(75)</p>
+          <div id="faq_container12"></div>
+          <a id="load_more12">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category13" class="tab-pane fade">
+          <p>개인금고(19)</p>
+          <div id="faq_container13"></div>
+          <a id="load_more13">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+        <div id="category14" class="tab-pane fade">
+          <p>기타(81)</p>
+          <div id="faq_container14"></div>
+          <a id="load_more14">더보기 <i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <footer></footer>
+  <script>
+    $(function(){
+      $('header').load('../components/header.html');
+      $('footer').load('../components/footer.html');
+    });
+  </script>
+</body>
+</html>

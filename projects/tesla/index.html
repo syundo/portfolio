@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tesla: Electric Cars, Solar & Clean Energy</title>
+  <link rel="icon" type="image/png" sizes=" 256x256" href="images/tesla_favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />	
+  <!-- 부트스트랩 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- 배경 동영상 -->
+   <figure class="vid">
+    <video loop="loop" autoplay="autoplay" muted>
+      <source src="images/tesla_vid_bg.mp4" type="video/mp4">
+    </video>
+   </figure>
+
+   <!-- 제목 로고 -->
+    <h1><img src="images/tesla_logo.png" id="logo2"></h1>
+
+    <!-- 헤더 -->
+    <header>
+      <ul id="gnb">
+          <li class="on">
+              <a href="#"><em><i class="fa fa-refresh fa-spin"></i>About Tesla</em></a>
+              <ul>
+                  <li><a href="#"><em><b>Model 3</b></em></a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#"><em><i class="fa fa-car"></i>Vehicles</em></a>
+              <ul>
+                  <li><a href="#"><em>Model S</em></a></li>
+                  <li><a href="#"><em>Model X</em></a></li>
+                  <li><a href="#"><em>Model Y</em></a></li>
+                  <li><a href="#"><em>Cybertruck</em></a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#"><em><i class="fa fa-bolt"></i>Energy</em></a>
+              <ul>
+                  <li><a href="#"><em>Solar Panels</em></a></li>
+                  <li><a href="#"><em>Solar Roof</em></a></li>
+                  <li><a href="#"><em>Powerwall</em></a></li>
+                  <li><a href="#"><em>Megapack</em></a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#"><em><i class="fa fa-battery-full"></i>Charging</em></a>
+              <ul>
+                  <li><a href="#"><em>Charging</em></a></li>
+                  <li><a href="#"><em>Home Charging</em></a></li>
+                  <li><a href="#"><em>Supercharging</em></a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#"><em><i class="fa fa-plus-square"></i>More</em></a>
+              <ul>
+                  <li><a href="#"><em>Roadster</em></a></li>
+                  <li><a href="#"><em>Semi</em></a></li>
+                  <li><a href="#"><em>News</em></a></li>
+              </ul>
+          </li>
+      </ul>
+  </header>
+
+  <!-- SNS 버튼 모음 -->
+  <ul id="sns">
+    <li><a href="https://www.youtube.com/tesla/videos" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+    <li><a href="https://x.com/tesla" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com/teslamotors/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="https://www.linkedin.com/company/tesla-motors" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+  </ul>
+
+  <!-- 제품 시그니처 문구 -->
+  <section class="txtBox">
+    <p class="txt">Upgraded Performance<br>0-100km/h 3.1seconds<b></b></p>
+    <p class="tit">The Model 3<em></em></p>
+  </section>
+
+  <!-- 주문창 -->
+  <div id="orderbox">
+    <div class="dropdown">
+      <button class="dropbtn">$1,203 /mo<i class="fa-solid fa-chevron-down"></i></button>
+      <div class="dropdown-content">
+        <a href="#">$957 /mo (Lease,Wheel Drive)</a>
+        <a href="#">$1,207 /mo (Lease,Cyberbeast)</a>
+        <a href="#">$77,790 (Cash, Wheel Drive)</a>
+        <a href="#">$97,790 (Cash, Cyberbeast)</a>
+      </div>
+    </div>
+    <p>after est.savings</p>
+    <button id="btn001" data-toggle="modal" data-target="#myModal">Order Now</button>
+  </div>
+
+  <!-- 구매 창 -->
+  <div id="modalContainer" class="hidden">
+    <div id="modalContent">
+      <p>모달 창 입니다.</p>
+      <button id="modalCloseButton"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
+
+  <script>
+    const modalOpenButton = document.getElementById('btn001');
+    const modalCloseButton = document.getElementById('modalCloseButton');
+    const modal = document.getElementById('modalContainer');
+    modalOpenButton.addEventListener('click', () => {
+    modal.classList.remove('hidden');
+    });
+
+    modalCloseButton.addEventListener('click', () => {
+    modal.classList.add('hidden');
+    });
+  </script>
+
+  <!-- 하단 사이드 컨텐츠 메뉴 -->
+  <section id="side">
+    <div class="con">
+      <p>
+        <em>Demo drive</em>
+        <a href="https://www.tesla.com/drive"><video src="https://digitalassets.tesla.com/tesla-contents/video/upload/f_auto,q_auto/Homepage-Demo-Drive-Desktop-NA.mp4" id="demodrivevd" loop="loop" autoplay="autoplay" muted></a>
+      </p>
+      <p>
+        <em>Lastest news</em>
+        <!-- 최근 뉴스 슬라이드 -->
+        <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#newsCarousel" data-slide-to="1"></li>
+            <li data-target="#newsCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <a href="https://finance.yahoo.com/news/tesla-stock-falls-as-trump-ends-ev-mandate-looks-to-eliminate-subsidies-152217391.html"><img src="images/tesla_news_pic01.png" alt="첫번째 뉴스"></a>
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <a href="https://www.cnbc.com/2025/01/21/tesla-lost-15-billion-in-brand-value-in-2024-brand-finance-found.html"><img src="images/tesla_news_pic02.png" alt="두번째 뉴스"></a>
+              <div class="carousel-caption">
+              </div>
+            </div>
+            <div class="item">
+              <a href="https://biz.heraldcorp.com/article/10404572?ref=naver"><img src="images/tesla_news_pic03.png" alt="세번째 뉴스"></a>
+              <div class="carousel-caption">
+              </div>
+            </div>
+          </div>
+
+          <!-- 좌우 controls -->
+          <a class="left carousel-control" href="#newsCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">P</span>
+          </a>
+          <a class="right carousel-control" href="#newsCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">N</span>
+          </a>
+        </div>
+      </p>
+      <p id="conbox3">
+        <em>Other businesses</em>
+        <a href="#"><img src="images/tesla_con_pic01.png"></a>
+        <a href="#"><img src="images/tesla_con_pic02.png"></a>
+      </p>
+    </div>
+  </section>
+  <!-- .touch-me 부분 #side 끝나는 div 밑에 형제로 지정 -->
+  <div class="touch-cont">
+    <div class="touch-me">
+        <span style="--index: 0;">T</span>
+        <span style="--index: 1;">o</span>
+        <span style="--index: 2;">u</span>
+        <span style="--index: 3;">c</span>
+        <span style="--index: 4;">h</span>
+        <span style="--index: 5;"> </span>
+        <span style="--index: 6;">M</span>
+        <span style="--index: 7;">e</span>
+    </div>
+  </div>
+</body>
+</html>

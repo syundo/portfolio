@@ -1,0 +1,50 @@
+/* reset */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+li{list-style: none; float: left;}
+.wr{width: 1280px; margin: 0 auto; overflow: hidden;}
+
+/* header */
+h1{float: left;}
+#nav{float: left; margin: 15px 0 0 200px;}
+#nav li{padding: 5px 20px; font-size: 1.2em; font-weight: bold;}
+#top{float: right; margin: 10px 10px;}
+#top li{height: 25px; padding: 15px; line-height: 25px; font-size: 0.8em;}
+
+/* visual */
+visual .wr{background-color: #f0b154; width: 100%; overflow: visible;}
+visual img{width: auto; height: auto; margin: 0 auto; display: block; position: relative; top: 35px;}
+
+/* contents */
+section .wr{overflow: hidden; margin-top: 30px; margin-bottom: 50px;}
+section .wr h2{margin: 20px 0; font-weight: bold;}
+section .wr .container{overflow: hidden;}
+section .wr .container div{float: left;}
+section .wr .container h3{color: rgb(150, 150, 150); font-size: 0.9em;}
+ 
+/* shop */
+#shop h2{margin-top: 50px;}
+#shop .container div{width: 408px; margin: 0 auto; overflow: hidden; border: 1px solid gainsboro;}
+#shop .container div:nth-child(2){margin: 0 25px;}
+#shop .container div h3{margin-top: 20px; margin-left: 20px;}
+#shop .container div p{margin: 5px 20px; font-weight: bold;}
+#shop .container div p:last-child{margin-bottom: 20px;}
+
+/* partner */
+#partner .container{float: left; margin: 0 auto;}
+#partner .container .left{overflow: hidden; margin-right: 25px;}
+#partner .container dl{overflow: hidden; margin-bottom: 25px; border: 1px solid gainsboro;}
+#partner .container dl dt{float: left; width: 350px; height: 235px;}
+#partner .container dl dt img{width: 100%; height: 100%;}
+#partner .container dl dd{background-color: rgb(250, 250, 250); float: left; width: 270px; height: 235px; padding: 0 20px;}
+#partner .container dl dd h4{margin-top: 60px; color: darkorchid;}
+#partner .container dl dd p{font-size: 1.2em; margin: 10px 0;}
+
+/* footer */
+footer .wr{margin-top: 30px;}
+footer #notice{overflow: hidden; margin:30px 0;}
+footer #notice hr{width: 100%; border: none; border-top: 1px solid gainsboro;}
+footer #notice p{float: left; color: dimgray; margin: 10px 0;}
+footer #notice #noti{margin-right: 50px; color:black; font-weight: bold;}
+footer #notice #new{margin-left: 5px; color: limegreen; font-weight: bold;}
+footer #responsibility li{color: dimgray; margin-right: 10px; font-size: 0.9em;}
+footer #responsibility #personal{font-weight: bold;}

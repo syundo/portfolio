@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>브랜드 | 카카오뱅크</title>
+   <!-- favicon -->
+   <link rel="shortcut icon" href="../assets/icon/favicon.png" type="image/x-icon">
+  <!-- jQuery/ajax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Bootstrap4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- fontawsome -->
+  <script src="https://kit.fontawesome.com/e7c9242ec2.js" crossorigin="anonymous"></script>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <script src="../js/about.js"></script>
+</head>
+<body>
+  <header></header>
+ 
+  <div id="container">
+    <!-- 카카오은행의 장점-------------------------------------------------------------------------------->
+    <div class="container-fluid text-center kakao" >
+      <div class="container ">
+        <h1>
+          일상에서 더 쉽게, 더 자주 이용하는<br>
+          나만의 은행
+        </h1>
+        <div class="kakao_intro">
+          <P> 카카오뱅크는 사람과 은행의 만남이 더 쉽게, 더 자주 일어나야 한다고 믿습니다.</P>
+          <P> 사용자 중심의 혁신적인 기술을 통해 일상 속 어떤 순간에서도 유용한 나만의 은행.</P>  
+          <p>카카오뱅크는 또 하나의 은행이 아닌 '은행의 새로운 시작' 입니다.</p>
+        </div>
+      </div>
+    </div> 
+    
+    <!-- 홈 이미지-------------------------------------------------------------------------------------->
+    <div class="container-fluid phoneImg"></div>
+
+    <!-- 은행의 History---------------------------------------------------------------------------------->
+    <div class="container timeline">
+      <div id="timeline"></div>
+    </div>
+    
+    <!-- 브랜드 동영상----------------------------------------------------------------------------------->
+    <div class="container-fluid video">
+      <div class="container ">
+        <h2 class="text-center"> 
+          브랜드 영상  
+        </h2>
+        <div class="line"></div>
+        <div class="row" id="video">
+          <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9" id="video_wrapper1">   
+              <img id="videoImg1" src="../assets/media/images/02about/video1.png" alt="Click to play video" width="100%">       
+              <iframe id="videoFrame1" width="300" height="200" src="" frameborder="0" allowfullscreen style="display: none;"></iframe>            
+            </div>
+            <p>#또 한 번 은행을 새롭게</p>
+            <p>카카오뱅크 주택담보대출 전국 광역시까지 확대</p>
+            <p>주택담보대출의 복잡한 과정을 더 쉽고, 친절하게!</p>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9" id="video_wrapper2">
+              <img id="videoImg2" src="../assets/media/images/02about/video2.png" alt="Click to play video" width="100%">   
+              <iframe id="videoFrame2" width="300" height="200" src="" frameborder="0" allowfullscreen style="display: none;"></iframe>  
+            </div>
+            <p>#세상 모든 모임</p>
+            <p>친구, 가족, 연인, 동호인끼리</p>
+            <p>요즘엔 다 여기서 모임</p>
+          </div>
+          
+          <div class="col-sm-4">
+            <div class="embed-responsive embed-responsive-16by9" id="video_wrapper3">
+              <img id="videoImg3" src="../assets/media/images/02about/video3.png" alt="Click to play video" width="100%">   
+              <iframe id="videoFrame3" width="300" height="200" src="" frameborder="0" allowfullscreen style="display: none;"></iframe>            
+            </div>
+            <p>#이미 모두의 은행</p>
+            <p>한 사람, 한 사람을 위해 시작한 은행이</p>
+            <p>더 많은 사람들이 찾는 모두의 은행이 되었습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BI소개---------------------------------------------------------------------------------------->
+    <div class="container-fluid bi_intro">
+      <div class="container text-center">
+        <h2>BI소개</h2>
+        <div class="line" ></div>
+        <div class="row">
+          <div class="col-sm-12 biImg"></div>
+        </div>
+        <div class="text_sym">
+          <h3>Symbol & Wordmark</h3>
+          <p>내가 ( I ) 중심이 되는 은행 (B)을 형상화한 심볼과 고객중심 DNA를 반영한 워드마크</p>
+        </div>
+        <hr>          
+      </div>
+
+      <!-- 자료 Download 버튼  --------------------------------------------------------------->
+      <div class="container" id="dl_btn">   
+        <a class="btn_down" download="" href="#" target="_self">GUIDE 파일다운로드</a>       
+        <a class="btn_down" download="" href="#" target="_self">BRAND ASSET 파일 다운로드</a>                   
+      </div>
+    </div>
+  </div>  <!--id="container"의 닫는 태그-->
+   
+
+
+  <footer></footer>
+  <script>
+    $(function(){
+      $('header').load('../components/header.html');
+      $('footer').load('../components/footer.html');
+    });
+  </script>
+</body>
+</html>

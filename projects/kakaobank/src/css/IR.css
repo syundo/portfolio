@@ -1,0 +1,49 @@
+/* IR 페이지 CSS */
+.container_ir {
+  width: 1080px;
+  margin: 0 auto;
+  padding:0 1.5rem 5rem 1.5rem;
+  box-sizing: border-box;
+}
+h1.title_ir{
+  margin: 4rem auto;
+  padding: 2rem 0; 
+  font-size: 30px;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+/* IR 테이블 ------------------------------- */
+table.table_ir {
+  margin: 0 auto;
+  font-size: 13px;
+}
+table.table_ir thead th {border-bottom: none;color: #535353; font-weight: normal;font-weight: bold;}
+.table #tbody_ir td{border-top:none;border-bottom: 1px solid #dee2e6;}
+#tbody_ir>tr>td:not(:nth-child(2)){
+  color: #888;
+  font-weight: 200;
+  text-align: center;
+}
+#tbody_ir>tr>td a:nth-child(3){display: flex;align-items: center;}
+#tbody_ir>tr>td a>.fa-download{margin-left: 0.5rem;}
+
+/* IR 테이블 pagination ---------------------------- */
+.pagenation_ir {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.pagenation_ir ul.pagination li {margin: 0 1rem;color: #7d7d7d;}
+.pagenation_ir ul.pagination .active {color: black;text-decoration: underline;}
+.pagenation_ir ul.pagination li:not([class*=active]) {cursor: pointer;}
+.pagenation_ir ul.pagination li:not([class*=active]):hover {color: black;text-decoration: underline;}
+.pagenation_ir i.fa-magnifying-glass {position: absolute;right: 0;color: #7d7d7d;cursor: pointer;}
+.pagenation_ir i.fa-magnifying-glass:hover {color: black;}
+
+/* IR search -------------------------------------- */
+#search_ir{height: 40px; width: 200px;border: none;position: absolute;right: 24px; bottom: 0;border-bottom: 2px solid black;}
+#search_ir:focus{outline: none;}
+
