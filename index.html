@@ -87,8 +87,52 @@
             <div class="slider">
               <button class="slider_btn prev">〈</button>
               <button class="slider_btn next">〉</button>
+
               <div class="slide_container">
-                
+                <div class="team project slide">
+                  <h4>SMaSh</h4>
+                  <video loop="loop" autoplay="autoplay" muted>
+                    <source src="src/assets/videos/sample_video.mp4" type="video/mp4">
+                  </video>
+                  <p>진행 중...</p>
+                  <label for="modal_toggle" class="open_modal btn" 
+                    data-header="프로젝트 개요 및 구현기능" 
+                    data-ajax-url="src/components/modal/contents/smash.html" 
+                    data-footer-links='[{"href":"https://spiced-zone-980.notion.site/1fb44f7888f3800a8262e52a720ce6ec?source=copy_link", "text":"팀 Notion으로 이동", "target":"_blank"}, 
+                                        {"href":"https://github.com/Thuy111/GlobalIT_Final", "text":"팀 GitHub으로 이동", "target":"_blank"}, 
+                                        {"href":"#", "text":"발표 자료 다운로드", "download":""}]'>
+                    지금 바로 내용 확인하기
+                  </label>
+                  <section>
+                    <strong>사용기술</strong>
+                    <p>
+                      Front-End: 
+                      <span>React</span>
+                    </p>
+                    <p>
+                      Back-End: 
+                      <span>Spring boot</span>
+                    </p>
+                    <p>
+                      DB: 
+                      <span>Maria DB</span>
+                    </p>
+                    <p>
+                      Server: 
+                      <span>Tomcat 9.0</span>
+                    </p>
+                    <p>
+                      Tool: 
+                      <span>VS Code</span>
+                      <span>Git</span>
+                      <span>GitHub</span>
+                      <span>Notion</span>
+                      <span>Jira</span>
+                      <span>Figma</span>
+                      <span>ChatGPT</span>
+                    </p>
+                  </section>
+                </div>
                 <div class="team project slide">
                   <h4>美味日報(미미일보)</h4>
                   <video loop="loop" autoplay="autoplay" muted>
@@ -98,8 +142,9 @@
                   <label for="modal_toggle" class="open_modal btn" 
                     data-header="프로젝트 개요 및 구현기능" 
                     data-ajax-url="src/components/modal/contents/mimidaily.html" 
-                    data-footer-links='[{"href":"#", "text":"발표 자료 다운로드", "download":""}, 
-                                        {"href":"https://github.com/syundo/MiMiDaily", "text":"GitHub으로 이동", "target":"_blank"}]'>
+                    data-footer-links='[{"href":"https://github.com/syundo/MiMiDaily", "text":"소스 코드", "target":"_blank"}, 
+                                        {"href":"https://github.com/seasign10/GlobalIT_Mini02", "text":"팀 GitHub으로 이동", "target":"_blank"}, 
+                                        {"href":"#", "text":"발표 자료 다운로드", "download":""}]'>
                     지금 바로 내용 확인하기
                   </label>
                   <section>
@@ -149,8 +194,9 @@
                     data-header="프로젝트 개요 및 구현기능" 
                     data-ajax-url="src/components/modal/contents/kakobank.html" 
                     data-footer-links='[{"href":"projects/kakaobank/", "text":"해당 페이지로 이동", "target":"_blank"},
-                                        {"href":"#", "text":"발표 자료 다운로드", "download":""}, 
-                                        {"href":"https://github.com/syundo/portfolio/tree/main/projects/kakaobank", "text":"GitHub으로 이동", "target":"_blank"}]'>
+                                        {"href":"https://github.com/syundo/portfolio/tree/main/projects/kakaobank", "text":"페이지 소스 코드", "target":"_blank"}, 
+                                        {"href":"https://github.com/seasign10/GlobalIT_Mini01", "text":"팀 GitHub으로 이동", "target":"_blank"}, 
+                                        {"href":"#", "text":"발표 자료 다운로드", "download":""}]'>
                     지금 바로 내용 확인하기
                   </label>
                   <section>
@@ -175,38 +221,7 @@
                     </p>
                   </section>
                 </div>
-                <div class="team project slide">
-                  <h4>팀 프로젝트</h4>
-                  <video loop="loop" autoplay="autoplay" muted>
-                    <source src="src/assets/videos/sample_video.mp4" type="video/mp4">
-                  </video>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, omnis.</p>
-                  <label for="modal_toggle" class="open_modal btn" 
-                    data-header="프로젝트 개요 및 구현기능" 
-                    data-ajax-url="invalid-url.html" 
-                    data-footer-links='[{"href":"#", "text":"발표 자료 다운로드", "download":""}, 
-                                        {"href":"#", "text":"GitHub으로 이동", "target":"_blank"}]'>
-                    지금 바로 내용 확인하기
-                  </label>
-                  <section>
-                    <strong>사용기술</strong>
-                    <p>
-                      Front-End: 
-                    </p>
-                    <p>
-                      Back-End: 
-                    </p>
-                    <p>
-                      DB: 
-                    </p>
-                    <p>
-                      Server: 
-                    </p>
-                    <p>
-                      Tool: 
-                    </p>
-                  </section>
-                </div>
+                
                 <div class="slider_panel hidden">
                   <i class="autoplay fa fa-pause-circle"></i>  
                   <span class="index active"></span> 
@@ -268,7 +283,7 @@
     <footer>
       <h5>
         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/syundo/AI-WebApp/tree/study"><i class="fa-brands fa-github"></i></a>
         <!-- <i>Notion</i> -->
       </h5>
       <h6>
